@@ -1,14 +1,22 @@
+/* VARIABLES */
+:root {
+    --primary-blue: #1f4f78;
+    --dark-grey: #333;
+    --bright-yellow: #fffb00; /* Mejor contraste para accesibilidad */
+    --white: #ffffff;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 /* HEADER */
-
 header {
-    background-color: #1f4f78;
-    color: white;
+    background-color: var(--primary-blue);
+    color: var(--white);
 }
 
 #course-title {
@@ -16,27 +24,29 @@ header {
     text-align: center;
     padding: 20px;
     font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #333;
+    background-color: var(--dark-grey);
     padding: 15px;
 }
 
 nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: yellow;
+    color: var(--bright-yellow);
+    text-decoration: underline;
 }
 
 /* MAIN */
-
 main {
     max-width: 1000px;
     margin: auto;
@@ -45,10 +55,12 @@ main {
 
 h1 {
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 
 /* CARDS */
-
 .cards {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -56,77 +68,78 @@ h1 {
 }
 
 .card {
-    background-color: white;
-    border-radius: 10px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden;
 }
 
 .card h2 {
-    background-color: #1f4f78;
-    color: white;
+    background-color: var(--primary-blue);
+    color: var(--white);
     margin: 0;
     padding: 15px;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 
-.card p,
-.card ul {
-    padding: 20px;
-}
-
-/* ABOUT SECTION */
-
+/* SECCIÓN ABOUT ME - AJUSTE CUADRADO */
 .about {
     display: flex;
     gap: 20px;
     padding: 20px;
+    align-items: center;
 }
 
 .profile {
-    width: 150px;
-    height: auto;
+    width: 200px;         /* Tamaño del cuadrado */
+    height: 200px;        /* Tamaño del cuadrado */
+    object-fit: cover;    /* Recorta la imagen para que no se estire */
+    object-position: top; /* Centra el recorte en la parte superior/rostro */
     border-radius: 10px;
+    border: 3px solid #eee;
 }
 
 .country {
     display: flex;
     gap: 15px;
     align-items: center;
+    margin-top: 15px;
 }
 
 .country img {
-    width: 120px;
+    width: 100px;
+    height: auto;
 }
 
 /* FOOTER */
-
 footer {
-    background-color: #1f4f78;
-    color: white;
+    background-color: var(--primary-blue);
+    color: var(--white);
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 25px;
+    margin-top: 30px;
 }
 
 #lastModified {
-    color: yellow;
+    color: var(--bright-yellow);
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /* RESPONSIVE */
-
 @media (max-width: 768px) {
-
     .cards {
         grid-template-columns: 1fr;
     }
 
     .about {
         flex-direction: column;
+        text-align: center;
     }
 
     nav {
         flex-direction: column;
-        text-align: center;
         gap: 10px;
     }
 }
