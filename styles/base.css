@@ -33,16 +33,15 @@ nav a:hover {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
 
 .card {
-    background: #f4f4f4;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
 }
 
 footer {

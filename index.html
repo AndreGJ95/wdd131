@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-
     <title>
-        WDD 131  Dynamic Web Fundamentals  Andre Guerrero
+        WDD 131, Dynamic Web Fundamentals, Andre Guerrero
     </title>
 
     <meta name="description"
-        content="WDD 131  Dynamic Web Fundamentals. Andre Guerrero. Home page project using HTML, CSS and JavaScript.">
+        content="WDD 131, Dynamic Web Fundamentals. Andre Guerrero. Home page project using HTML, CSS and JavaScript.">
 
     <meta name="author"
         content="Andre Guerrero">
@@ -22,7 +22,7 @@
 <body>
     <header>
         <span id="course-title">
-            WDD 131  Dynamic Web Fundamentals
+            WDD 131, Dynamic Web Fundamentals
         </span>
         <nav>
             <a href="#">LinkedIn</a>
@@ -33,28 +33,46 @@
     </header>
     <main>
         <h1>Andre Guerrero</h1>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>
-                My name is Andre and I enjoy learning web development.
-            </p>
-        </section>
-
-        <section class="card">
-            <h2>Resources</h2>
-            <ul>
-                <li>MDN</li>
-                <li>W3 Schools</li>
-                <li>CSS Tricks</li>
-            </ul>
-        </section>
+        <div class="cards">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about">
+                    <div>
+                        <p>
+                            My name is Andre and I enjoy learning web development.
+                            I like programming and creating websites.
+                        </p>
+                        <h3>Ecuador</h3>
+                        <div class="country">
+                            <img src="images/ecuador.jpg"
+                                alt="Flag of Ecuador">
+                            <p>
+                                Ecuador is located in South America and is known
+                                for its mountains, beaches and culture.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="images/profile.jpg"
+                        alt="Andre Guerrero"
+                        class="profile">
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="#">MDN</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">freeCodeCamp</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
         <p>
             © <span id="currentyear"></span>
             Andre Guerrero - Ecuador
         </p>
-
         <p id="lastModified"></p>
     </footer>
 </body>
