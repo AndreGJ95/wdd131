@@ -1,12 +1,12 @@
 @media screen and (min-width: 768px) {
 
-    /* HIDE HAMBURGER */
+    
 
     #menu {
         display: none;
     }
 
-    /* NAVIGATION */
+    
 
     nav {
         display: flex;
@@ -15,7 +15,7 @@
         gap: 1rem;
     }
 
-    /* GALLERY */
+    
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
