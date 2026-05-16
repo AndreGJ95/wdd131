@@ -45,24 +45,24 @@ header h1 {
 
 
 
-.navigation {
+nav {
     display: none;
     flex-direction: column;
     text-align: center;
 }
 
-.navigation.open {
+nav.open {
     display: flex;
 }
 
-.navigation a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 1rem;
     transition: background-color 0.3s ease;
 }
 
-.navigation a:hover {
+nav a:hover {
     background-color: #6a0dad;
 }
 
@@ -89,6 +89,7 @@ main h2 {
 }
 
 
+
 figure {
     background-color: white;
     padding: 0.5rem;
@@ -96,8 +97,9 @@ figure {
     text-align: center;
     min-height: 300px;
 
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 figure img {
     width: 100%;
@@ -105,6 +107,8 @@ figure img {
     object-fit: cover;
     border-radius: 5px;
 }
+
+
 
 figcaption {
     margin-top: 0.75rem;

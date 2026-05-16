@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Temple Album</title>
 
-    <meta name="description" content="Temple Album Assignment" />
-    <meta name="author" content="Andre David Guerrero Jacome" />
-    
+    <meta name="description"
+        content="Responsive Temple Album project using HTML, CSS Grid, Flexbox, media queries, and JavaScript navigation menu.">
+
+    <meta name="author" content="Andre David Guerrero Jacome">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="styles/temples.css">
+
     <link rel="stylesheet" href="styles/temples-large.css">
 
-    
     <script src="scripts/temples.js" defer></script>
+
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
         <button id="menu"></button>
-        <nav class="navigation">
+        <nav>
+
             <a href="#">Home</a>
+
             <a href="#">Old</a>
+
             <a href="#">New</a>
+
             <a href="#">Large</a>
+
             <a href="#">Small</a>
         </nav>
     </header>
@@ -46,7 +58,7 @@
             </figure>
 
             <figure>
-                <img src="images/toky-japan-temple.webp" alt="Temple" loading="lazy">
+                <img src="images/tokyo-japan-temple.webp" alt="Temple" loading="lazy">
                 <figcaption>Tokyo Japan</figcaption>
             </figure>
 
@@ -83,7 +95,8 @@
     </main>
     <footer>
         <p>
-            &copy; <span id="currentyear"></span>
+            &copy;
+            <span id="currentyear"></span>
             🌸 Andre David Guerrero Jacome 🌸 Ecuador
         </p>
         <p id="lastModified"></p>
