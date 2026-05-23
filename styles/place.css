@@ -1,14 +1,14 @@
-/* Variables Globales con colores inspirados en Quilotoa y Ecuador */
+
 :root {
-    --primary-color: #006d5b;   /* Verde Esmeralda de la laguna */
-    --accent-color: #ffbe0b;    /* Amarillo andino / bandera */
-    --dark-color: #2b2d42;      /* Gris oscuro para texto */
-    --bg-color: #f4f6f6;        /* Fondo claro grisáceo */
-    --card-bg: #ffffff;         /* Blanco para las tarjetas de datos */
+    --primary-color: #006d5b;   
+    --accent-color: #ffbe0b;    
+    --dark-color: #2b2d42;      
+    --bg-color: #f4f6f6;        
+    --card-bg: #ffffff;         
     --padding-base: 15px;
 }
 
-/* Estilos Base (Mobile-First) */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
@@ -81,12 +81,11 @@ footer p {
     margin: 5px 0;
 }
 
-/* --- Media Query para Pantallas Grandes (Escritorio / Tablets Grandes) --- */
+
 @media (min-width: 900px) {
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto auto;
         gap: 20px;
         max-width: 1200px;
         margin: 30px auto;
@@ -94,19 +93,19 @@ footer p {
     }
 
     .hero-container {
-        grid-column: 1 / -1; /* Ocupa todo el ancho superior */
+        grid-column: 1 / -1;
     }
 
     .data-card {
-        margin: 0; /* Resetea el margen de móvil */
+        margin: 0;
     }
 
-    /* Ocultar el icono SVG móvil en pantallas grandes */
+    
     .weather-icon-mobile {
         display: none;
     }
 
-    /* REQUERIMIENTO: Pseudo-elemento para el icono del clima en vista grande */
+    
     .weather-heading::after {
         content: " ⛅";
         font-size: 1.4rem;
