@@ -1,0 +1,35 @@
+/* Global Variables matching your chosen location's vibe */
+:root {
+    --primary-color: #1b4d3e; /* Example: Deep green */
+    --accent-color: #f4a261;  /* Example: Warm sand */
+    --text-color: #333333;
+    --bg-color: #f7f9fa;
+    --card-bg: #ffffff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Mobile First Layout Styles Go Here --- */
+
+/* --- Media Query for Larger Views --- */
+@media (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 20px;
+    }
+
+    /* Pseudo-element requirement for the large-view weather icon */
+    .weather-heading::after {
+        content: " ⛅"; /* Uses an emoticon/equivalent for the wider view */
+        font-size: 1.2rem;
+        margin-left: 8px;
+    }
+}

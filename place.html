@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Page - [Your Chosen Place]</title>
+    <meta name="description" content="A data page about [Your Chosen Place] featuring facts and weather details.">
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- Defer ensures the script runs after the HTML parsing is complete -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>[Your Chosen Place]</h1>
+    </header>
+
+    <main>
+        <!-- Responsive Hero using WebP -->
+        <div class="hero-container">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Beautiful landscape of [Place]" loading="lazy">
+            </picture>
+        </div>
+
+        <section class="data-card facts">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 123,456 sq km</li>
+                <li><strong>Population:</strong> 1.2 Million</li>
+                <li><strong>Capital:</strong> [Capital City]</li>
+                <li><strong>Language:</strong> [Language]</li>
+                <li><strong>Currency:</strong> [Currency]</li>
+            </ul>
+        </section>
+
+        <section class="data-card weather">
+            <!-- The emoji/pseudo-element goes near here based on your CSS -->
+            <h2 class="weather-heading">Weather</h2>
+            <!-- Mobile SVG icon placeholder via HTML if needed, or handle via CSS -->
+            <ul class="weather-info">
+                <li><strong>Temperature:</strong> <span id="temp">8</span> °C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind">10</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Your Name | Location, Country</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
