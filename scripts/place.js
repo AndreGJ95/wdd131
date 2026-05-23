@@ -1,26 +1,28 @@
-// Footer dates
+// 1. Lógica del Footer: Año actual y última modificación
 document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+document.getElementById("lastModified").textContent = `Última modificación: ${document.lastModified}`;
 
-// Static weather inputs (matching your HTML text values)
-const tempC = parseFloat(document.getElementById("temp").textContent);
-const windKmh = parseFloat(document.getElementById("wind").textContent);
+// 2. Captura de datos meteorológicos estáticos desde el HTML
+const currentTemp = parseFloat(document.getElementById("temp").textContent);
+const currentWind = parseFloat(document.getElementById("wind").textContent);
 
-// One-line return function for Wind Chill calculation (Metric)
-const calculateWindChill = (t, v) => 13.12 + 0.6215 * t -  11.37 * Math.pow(v, 0.16) + 0.3965 * t * Math.pow(v, 0.16);
+// REQUERIMIENTO: Función de una sola línea que calcula la sensación térmica (Fórmula Métrica)
+const calculateWindChill = (t, v) => 13.12 + (0.6215 * t) - (11.37 * Math.pow(v, 0.16)) + (0.3965 * t * Math.pow(v, 0.16));
 
-// Function to display the result based on strict criteria
+// 3. Función principal para validar límites y mostrar el resultado en pantalla
 function displayWindChill(temp, wind) {
-    const windChillSpan = document.getElementById("windchill");
+    const windChillElement = document.getElementById("windchill");
 
-    // Metric conditions: Temp <= 10 °C AND Wind > 4.8 km/h
+    // Condiciones métricas obligatorias: Temp <= 10 °C y Viento > 4.8 km/h
     if (temp <= 10 && wind > 4.8) {
-        const chill = calculateWindChill(temp, wind);
-        windChillSpan.textContent = `${chill.toFixed(1)} °C`;
+        const chillFactor = calculateWindChill(temp, wind);
+        // Muestra el resultado redondeado a 1 decimal
+        windChillElement.textContent = `${chillFactor.toFixed(1)} °C`;
     } else {
-        windChillSpan.textContent = "N/A";
+        // Si no cumple las condiciones, muestra Not Applicable (N/A)
+        windChillElement.textContent = "N/A";
     }
 }
 
-// Execute on load
-displayWindChill(tempC, windKmh);
+// Ejecutar la función automáticamente al cargar la página
+displayWindChill(currentTemp, currentWind);
