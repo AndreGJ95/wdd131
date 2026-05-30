@@ -7,14 +7,15 @@
     <meta name="description" content="Dynamic Temple Album Enhancement webpage using JavaScript array filtering and native lazy loading for WDD 131.">
     <meta name="author" content="Andre Guerrero">
     <link rel="stylesheet" href="./styles/filtered-temples.css">
-   
     <script src="./scripts/filtered-temples.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Temple Album Enhancement</h1>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+        
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="#" id="home">Home</a></li>
                 <li><a href="#" id="old">Old</a></li>
                 <li><a href="#" id="new">New</a></li>
@@ -26,7 +27,6 @@
 
     <main>
         <h2>Temples Directory</h2>
-        
         <div id="temple-cards-container"></div>
     </main>
 
