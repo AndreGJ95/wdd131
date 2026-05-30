@@ -1,3 +1,4 @@
+
 const temples = [
   {
     templeName: "Manti Utah",
@@ -71,7 +72,6 @@ const navOld = document.getElementById("old");
 const navNew = document.getElementById("new");
 const navLarge = document.getElementById("large");
 const navSmall = document.getElementById("small");
-
 
 const menuButton = document.getElementById("menu");
 const navigation = document.querySelector(".navigation");
