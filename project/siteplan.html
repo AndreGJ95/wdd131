@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guayaquil's Hidden Gems - Site Plan</title>
+    <title>Guayaquil's Hidden Gems - Site Plan Product Review</title>
+    <meta name="description" content="Comprehensive website planning document and architecture blueprint for Guayaquil's Hidden Gems local travel guide.">
+    <meta name="author" content="Andre Guerrero Jacome">
+    <link rel="stylesheet" href="styles/siteplan.css">
 </head>
 <body>
 
@@ -43,12 +46,24 @@
         <section id="color-schema">
             <h2>Color Scheme</h2>
             <p>The site uses colors inspired by Guayaquil's tropical environment and local identity, ensuring high contrast and clean presentation:</p>
-            <ul>
-                <li><strong>Primary Color:</strong> <code>#0056b3</code> (Guayaquil Sky Blue) — Used for main navigation layouts and header sections.</li>
-                <li><strong>Secondary Color:</strong> <code>#20c997</code> (Tropical Teal) — Used for section subheadings, filter highlights, and active borders.</li>
-                <li><strong>Accent Color:</strong> <code>#ffc107</code> (Sun Gold) — Used for important buttons and dynamic alerts.</li>
-                <li><strong>Text Color:</strong> <code>#212529</code> (Dark Charcoal) — Applied to all primary body content for structural contrast and readability.</li>
-            </ul>
+            
+            <div class="palette-container">
+                <div class="palette-card">
+                    <div class="color-swatch primary-swatch"></div>
+                    <div class="swatch-label">Guayaquil Sky Blue (#0056b3)</div>
+                    <div class="swatch-desc">Used for structural page headers, main site titles, and footer styling.</div>
+                </div>
+                <div class="palette-card">
+                    <div class="color-swatch secondary-swatch"></div>
+                    <div class="swatch-label">Tropical Teal (#20c997)</div>
+                    <div class="swatch-desc">Used for category filter badges, highlights, and secondary section borders.</div>
+                </div>
+                <div class="palette-card">
+                    <div class="color-swatch accent-swatch"></div>
+                    <div class="swatch-label">Sun Gold (#ffc107)</div>
+                    <div class="swatch-desc">Used for dynamic active states, form submission buttons, and visual call-to-actions.</div>
+                </div>
+            </div>
         </section>
 
         <section id="typography">
@@ -64,24 +79,30 @@
             <h2>Home Page Wireframes</h2>
             <p>Below are the structural representations of the home page content architecture across screen layouts:</p>
             
-            <div class="wf-mobile-blueprint">
-                <h3>Mobile Layout View</h3>
-                <div class="wf-box">[ Header / Sky Blue Navigation Menu ]</div>
-                <div class="wf-box">[ Dynamic Time-of-Day Greeting Wrapper ]</div>
-                <div class="wf-box">[ Guayaquil Welcome & Vision Statement ]</div>
-                <div class="wf-box">[ Link Button: Explore Directory ]</div>
-                <div class="wf-box">[ Link Button: Suggest a Spot Form ]</div>
-                <div class="wf-box">[ Footer / Copyright Info ]</div>
-            </div>
+            <div class="wireframe-grid">
+                <div class="wireframe-box">
+                    <h3>Mobile Layout View</h3>
+                    <div class="wf-element">[ Header / Blue Sky Navigation Menu ]</div>
+                    <div class="wf-element">[ Dynamic Time-of-Day Greeting Display ]</div>
+                    <div class="wf-element" style="height: 80px;">[ Guayaquil Welcome & Vision Statement ]</div>
+                    <div class="wf-element">[ Link Button: Explore Directory ]</div>
+                    <div class="wf-element">[ Link Button: Suggest a Spot Form ]</div>
+                    <div class="wf-element">[ Footer & Student Credits ]</div>
+                </div>
 
-            <br>
-
-            <div class="wf-desktop-blueprint">
-                <h3>Desktop Layout View</h3>
-                <div class="wf-box">[ Logo Block ] [ Home | Directory Nav | Form Suggest Nav ]</div>
-                <div class="wf-box">[ Panoramic Hero Graphic + Dynamic Time Greeting Display ]</div>
-                <div class="wf-box">[ Main Narrative Column ] [ Context Sidebar Links ]</div>
-                <div class="wf-box">[ Site Footer Elements & Social Badges ]</div>
+                <div class="wireframe-box">
+                    <h3>Desktop Layout View</h3>
+                    <div class="wf-row">
+                        <div class="wf-element">[ Guayaquil Gems Logo ]</div>
+                        <div class="wf-element" style="flex: 2;">[ Home Nav | Directory Nav | Form Suggest Nav ]</div>
+                    </div>
+                    <div class="wf-element" style="height: 100px;">[ Wide Panoramic Hero Banner + Dynamic Time Greeting Display ]</div>
+                    <div class="wf-row">
+                        <div class="wf-element" style="flex: 2;">[ Welcome Content & Core Local Mission Text ]</div>
+                        <div class="wf-element" style="flex: 1;">[ Quick Links & Category Shortcuts ]</div>
+                    </div>
+                    <div class="wf-element">[ Footer / Copyright & Course Badges ]</div>
+                </div>
             </div>
         </section>
     </main>
