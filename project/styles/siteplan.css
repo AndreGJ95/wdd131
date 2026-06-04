@@ -4,7 +4,7 @@
     --accent-color: #ffc107;     
     --text-color: #212529;       
     --bg-color: #f8f9fa;         
-    --surface-color: #ffffff;    
+    --surface-color: #ffffff;   
 }
 
 body {
@@ -106,7 +106,7 @@ h3 {
     padding: 0 10px;
 }
 
-/* Wireframes Layout */
+
 .wireframe-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -140,6 +140,14 @@ h3 {
     border-radius: 4px;
 }
 
+.wf-mobile-hero {
+    height: 80px;
+}
+
+.wf-desktop-hero {
+    height: 100px;
+}
+
 .wf-row {
     display: flex;
     gap: 10px;
@@ -149,6 +157,10 @@ h3 {
 .wf-row .wf-element {
     flex: 1;
     margin-bottom: 0;
+}
+
+.wf-flex-double {
+    flex: 2 !important;
 }
 
 footer {
