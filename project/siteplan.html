@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guayaquil's Hidden Gems - Site Plan</title>
+</head>
+<body>
+
+    <header>
+        <h1>Website Planning Document</h1>
+        <p>Project Subject: Guayaquil’s Hidden Gems</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Selected Name:</strong> Guayaquil’s Hidden Gems: A Local Travel Guide</p>
+            <h3>Reason for Selection:</h3>
+            <p>I chose this topic because I live in Guayaquil and I really enjoy finding places that aren't just the typical tourist spots. A list of locations is perfect for practicing what we are learning in class, like JavaScript arrays, objects, and event listeners for the form. It lets me meet all the project requirements while building something about my own city.</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The purpose of this 3-page website is to help visitors and locals find cool, lesser-known spots in Guayaquil, like small coffee shops, nice views, and quiet parks. The site delivers value by dynamically loading content, filtering by categories, and allowing user interaction through suggestions.</p>
+            <h3>Planned Page Architecture:</h3>
+            <ul>
+                <li><strong>Page 1 (Home):</strong> A simple welcome page introducing the concept, with a small JavaScript feature that changes the greeting depending on the time of day.</li>
+                <li><strong>Page 2 (The Gems Directory):</strong> A page showing all the places. I will use a JavaScript array of objects to dynamically generate the place cards using template literals. I'll also add buttons so users can filter the spots by category (like Cafes or Parks), and use lazy loading for the images.</li>
+                <li><strong>Page 3 (Suggest a Spot):</strong> A page with an HTML form where users can submit their own favorite places. I will use JavaScript to validate the input and use localStorage to save and show how many times a user has submitted a spot.</li>
+            </ul>
+        </section>
+
+        <section id="scenarios">
+            <h2>Target Audience Scenarios</h2>
+            <p>This website planning addresses specific questions from our target audience:</p>
+            <ul>
+                <li><strong>Scenario Question 1:</strong> "Where can I find a quiet park or a small, non-commercial coffee shop in Guayaquil away from typical crowded tourist hubs?"</li>
+                <li><strong>Scenario Question 2:</strong> "How can I contribute to this guide and suggest my own favorite local hidden spot using an online submission form?"</li>
+            </ul>
+        </section>
+
+        <section id="color-schema">
+            <h2>Color Scheme</h2>
+            <p>The site uses colors inspired by Guayaquil's tropical environment and local identity, ensuring high contrast and clean presentation:</p>
+            <ul>
+                <li><strong>Primary Color:</strong> <code>#0056b3</code> (Guayaquil Sky Blue) — Used for main navigation layouts and header sections.</li>
+                <li><strong>Secondary Color:</strong> <code>#20c997</code> (Tropical Teal) — Used for section subheadings, filter highlights, and active borders.</li>
+                <li><strong>Accent Color:</strong> <code>#ffc107</code> (Sun Gold) — Used for important buttons and dynamic alerts.</li>
+                <li><strong>Text Color:</strong> <code>#212529</code> (Dark Charcoal) — Applied to all primary body content for structural contrast and readability.</li>
+            </ul>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>To keep the site fast and clean across modern screens, we utilize a system sans-serif font family layout:</p>
+            <ul>
+                <li><strong>Heading Font Selection:</strong> <code>"Segoe UI", Roboto, sans-serif</code> — Applied to structural titles (H1, H2) for clean line visual weight.</li>
+                <li><strong>Body Font Selection:</strong> <code>"Segoe UI", Helvetica, sans-serif</code> — Applied to standard paragraphs, interactive menus, and text fields for digital legibility.</li>
+            </ul>
+        </section>
+
+        <section id="wireframes">
+            <h2>Home Page Wireframes</h2>
+            <p>Below are the structural representations of the home page content architecture across screen layouts:</p>
+            
+            <div class="wf-mobile-blueprint">
+                <h3>Mobile Layout View</h3>
+                <div class="wf-box">[ Header / Sky Blue Navigation Menu ]</div>
+                <div class="wf-box">[ Dynamic Time-of-Day Greeting Wrapper ]</div>
+                <div class="wf-box">[ Guayaquil Welcome & Vision Statement ]</div>
+                <div class="wf-box">[ Link Button: Explore Directory ]</div>
+                <div class="wf-box">[ Link Button: Suggest a Spot Form ]</div>
+                <div class="wf-box">[ Footer / Copyright Info ]</div>
+            </div>
+
+            <br>
+
+            <div class="wf-desktop-blueprint">
+                <h3>Desktop Layout View</h3>
+                <div class="wf-box">[ Logo Block ] [ Home | Directory Nav | Form Suggest Nav ]</div>
+                <div class="wf-box">[ Panoramic Hero Graphic + Dynamic Time Greeting Display ]</div>
+                <div class="wf-box">[ Main Narrative Column ] [ Context Sidebar Links ]</div>
+                <div class="wf-box">[ Site Footer Elements & Social Badges ]</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Andre Guerrero Jacome | WDD 131 Project Site Plan</p>
+    </footer>
+
+</body>
+</html>
