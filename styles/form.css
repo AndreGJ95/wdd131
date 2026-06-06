@@ -7,7 +7,10 @@
     --border-color: #cbd5e1;
     --star-color: #eab308;
     --required-color: #dc2626;
+    --footer-bg: #0f172a;
+    --success-color: #16a34a;
 }
+
 
 * {
     box-sizing: border-box;
@@ -25,10 +28,9 @@ body {
     min-height: 100vh;
 }
 
-
 header, footer {
-    background-color: #0f172a;
-    color: white;
+    background-color: var(--footer-bg);
+    color: #ffffff;
     text-align: center;
     padding: 1.5rem;
 }
@@ -40,7 +42,7 @@ footer {
 
 main {
     flex: 1;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,16 +51,16 @@ main {
 
 .review-form {
     background: var(--card-bg);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px #0000001a;
     width: 100%;
-    max-width: 600px; 
+    max-width: 600px;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
-    border: none; 
+    margin-bottom: 1.25rem;
+    border: none;
 }
 
 label, legend {
@@ -71,7 +73,6 @@ label, legend {
     color: var(--required-color);
 }
 
-
 input[type="text"],
 input[type="date"],
 select,
@@ -83,50 +84,57 @@ textarea {
     font-family: inherit;
     font-size: 1rem;
     outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s;
 }
 
 input:focus, select:focus, textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 
-.checkbox-group label {
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkbox-option {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: normal;
-    margin-bottom: 0.5rem;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
     cursor: pointer;
 }
 
-.checkbox-group input[type="checkbox"] {
-    width: 1.1rem;
-    height: 1.1rem;
+.checkbox-option label {
+    margin-bottom: 0;
+    font-weight: 400;
     cursor: pointer;
 }
 
 
 .star-rating {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 0.25rem;
     font-size: 2.25rem;
 }
 
 .star-rating input {
-    display: none; 
+    display: none;
 }
 
 .star-rating label {
-    color: #cbd5e1; 
+    color: #cbd5e1;
     cursor: pointer;
     transition: color 0.2s;
     margin: 0;
 }
-
 
 .star-rating label:hover,
 .star-rating label:hover ~ label,
@@ -139,7 +147,7 @@ input:focus, select:focus, textarea:focus {
     display: inline-block;
     width: 100%;
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     padding: 0.75rem;
     border: none;
     border-radius: 4px;
@@ -156,30 +164,21 @@ input:focus, select:focus, textarea:focus {
 }
 
 
-.confirmation-container {
-    padding: 2rem 1rem;
-}
-
 .confirmation-card {
-    background: white;
+    background: #ffffff;
     padding: 2.5rem 2rem;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px #0000001a;
     max-width: 500px;
     width: 100%;
 }
 
 .success-icon {
     font-size: 4rem;
-    color: #16a34a; 
+    color: var(--success-color);
     margin-bottom: 1rem;
     line-height: 1;
-}
-
-.confirmation-card h2 {
-    margin-bottom: 0.75rem;
-    color: #0f172a;
 }
 
 .counter-display {
@@ -191,7 +190,7 @@ input:focus, select:focus, textarea:focus {
 .counter-display strong {
     color: var(--primary-color);
     font-size: 1.4rem;
-    background: rgba(37, 99, 235, 0.1);
+    background: #2563eb1a;
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
 }
@@ -201,4 +200,14 @@ hr {
     height: 1px;
     background: var(--border-color);
     margin: 1.5rem 0;
+}
+
+
+@media (min-width: 600px) {
+    main {
+        padding: 3rem 2rem;
+    }
+    .review-form {
+        padding: 2.5rem;
+    }
 }

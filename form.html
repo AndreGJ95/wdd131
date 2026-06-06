@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form</title>
+    <meta name="description" content="Product review form portal for subatomic and future tech components testing.">
+    <meta name="author" content="Your Name Here">
+    <title>Review: Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -19,10 +21,10 @@
                 <label for="product-name">Product Name <span class="required">*</span></label>
                 <select id="product-name" name="productName" required>
                     <option value="" disabled selected>Select a Product ...</option>
-                    </select>
+                </select>
             </div>
 
-            <fieldset class="form-group rating-fieldset">
+            <fieldset class="form-group">
                 <legend>Overall Rating <span class="required">*</span></legend>
                 <div class="star-rating">
                     <input type="radio" id="star5" name="rating" value="5" required>
@@ -50,16 +52,28 @@
             <fieldset class="form-group">
                 <legend>Useful Features (Check all that apply)</legend>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label>
-                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-durability" name="features" value="durability">
+                        <label for="feature-durability">Durability</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-ease" name="features" value="ease-of-use">
+                        <label for="feature-ease">Ease of Use</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-performance" name="features" value="performance">
+                        <label for="feature-performance">Performance</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-design" name="features" value="design">
+                        <label for="feature-design">Design</label>
+                    </div>
                 </div>
             </fieldset>
 
             <div class="form-group">
                 <label for="written-review">Written Review (Optional)</label>
-                <textarea id="written-review" name="writtenReview" rows="5" placeholder="Share your experience with this product..."></textarea>
+                <textarea id="written-review" name="writtenReview" rows="5" placeholder="Share your experience..."></textarea>
             </div>
 
             <div class="form-group">
@@ -72,7 +86,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 | Product Review Portal | Your Name Here</p>
+        <p>&copy; 2026 | Product Review Portal | Andre Guerrero Jacome</p>
     </footer>
 </body>
 </html>
