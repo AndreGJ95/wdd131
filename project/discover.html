@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guayaquil's Hidden Gems | Discover</title>
+    <meta name="description" content="Browse through a curated directory of Guayaquil's best-kept secrets, filters by category.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h1>Guayaquil's Hidden Gems</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="suggest.html">Suggest a Spot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="directory-intro">
+            <h2>The Gems Directory</h2>
+            <p>Filter through our handpicked locations to plan your next unconventional route in the city.</p>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All Spots</button>
+                <button class="filter-btn" data-category="nature">Nature & Parks</button>
+                <button class="filter-btn" data-category="culture">Culture & History</button>
+                <button class="filter-btn" data-category="gastronomy">Local Flavors</button>
+            </div>
+        </section>
+
+        <section id="gems-container" class="gems-grid">
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Andre Guerrero | Guayaquil, Ecuador</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">Site References</a></p>
+    </footer>
+
+</body>
+</html>
